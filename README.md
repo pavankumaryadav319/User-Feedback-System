@@ -33,42 +33,6 @@ The User Feedback System is a full-stack web application designed to collect and
 - dotenv for environment variable management
 - Middleware: CORS and body-parser
 
----
-
-## Project Structure
-
-The project is divided into two main parts: frontend and backend.
-
-user-feedback-system/
-│
-├── frontend/ # React application for user input and dashboard
-│ ├── src/
-│ │ ├── App.js
-│ │ └── components/
-│ │ ├── FeedbackForm.js
-│ │ └── FeedbackDashboard.js
-│ └── package.json
-│
-├── backend/ # Node.js + Express API server
-│ ├── app.js
-│ ├── routes/
-│ │ └── feedback.js
-│ ├── controllers/
-│ │ └── feedbackController.js
-│ ├── models/
-│ │ └── Feedback.js
-│ ├── config/
-│ │ └── db.js
-│ ├── .env
-│ └── package.json
-│
-└── README.md # Project documentation
-
-yaml
-Copy
-Edit
-
----
 
 ## How to Run the Project
 
@@ -78,42 +42,25 @@ Edit
 - MongoDB or PostgreSQL running locally or through a cloud provider (like MongoDB Atlas or ElephantSQL)
 - Git (optional, for version control and pushing to GitHub)
 
----
+
 
 ### Setting up the Backend
 
 1. Navigate to the backend folder:
 cd backend
 
-markdown
-Copy
-Edit
-
 2. Install backend dependencies:
 npm install
-
-markdown
-Copy
-Edit
 
 3. Create a `.env` file and add your configuration:
 PORT=5000
 DB_URI=your_mongodb_or_postgresql_connection_string
 
-markdown
-Copy
-Edit
-
 4. Start the backend server:
 npm start
-
-yaml
-Copy
-Edit
-
 The backend should now be running on `http://localhost:5000`.
 
----
+
 
 ### Setting up the Frontend
 
@@ -121,27 +68,16 @@ The backend should now be running on `http://localhost:5000`.
 2. Navigate to the frontend folder:
 cd frontend
 
-markdown
-Copy
-Edit
 
 3. Install frontend dependencies:
 npm install
 
-markdown
-Copy
-Edit
 
 4. Start the React development server:
 npm start
 
-yaml
-Copy
-Edit
-
 The frontend should now be running on `http://localhost:3000`.
 
----
 
 ## API Endpoints
 
